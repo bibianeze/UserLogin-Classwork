@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-image: url("https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8=");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        #heading{
+            font-size: 60px;
+            font-family: cursive;
+        }
+        button{
+            width: 150px;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="heading">This is my first javascript code</h1>
+        <button id="button">Click</button>
+    </div>
+
+    <script>
+        let heading = document.getElementById("heading");
+        let btn = document.getElementById("button");
+
+        heading.textContent = "This will not be my last javascript code";
+        btn.innerHTML = "Submit";
+    </script>
+</body>
+</html>
